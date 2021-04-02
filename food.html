@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--slideshow-->
+        <title>FOOD</title>
+        <!--SEARCH ENGINE INFORMATION-->
+        <meta name="description" content="A collection of interests and hobbies">
+        <meta name="keywords" content="art,food,recipes,books,lego,krita,minecraft">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel=icon href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/svgs/solid/utensils.svg> <!--the icon in the tab bar-->
+        <!--CSS AND JAVASCRIPT-->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+        <script defer src="js/scripts.js"></script>
+        <!--EXTERNAL LINKS-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous"/>
+    </head> 
+    <body>
+        <nav class="Navigation">
+            <ul>
+                <li><a href="art.html">CRAFTS</a></li>
+                <li><a href="books.html">BOOK</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="game.html">GAMES</a></li>
+            </ul>
+        </nav>
+        <section>
+        <nav class="tab">
+            <button class="tablinks" onclick="openRecipe(event, 'Sweet-sour')">S&S chicken</button>
+            <button class="tablinks" onclick="openRecipe(event, 'apple-crumble')">Apple Crumble</button>
+            <button class="tablinks" onclick="openRecipe(event, 'Tokyo')">Tokyo</button>
+        </nav>
+          <article class="explainer">
+            Hey look, you found the aspiring chef part of me. I hope you enjoy these recipes
+          </article>
+          <article id="Sweet-sour" class="Recipe">
+            <h3>Sweet and Sour chicken</h3>
+            <section class="ingredients">
+                <ul>
+                    <li>6 boneless chicken fillets</li><li>6 spring oinions chopped</li><li>1 garlic clove or 1tsp garlic powder</li>
+                    <li>2 tbsp light soy sauce</li><li>seasoning</li><li>fry light</li>
+                    <li>1 tbsp dark soy sauce</li><li>1 tsp paprika</li><li>2 tsp Chinese five spice</li>
+                    <li>100ml passata or a tin of chopped tomatoes whizzed up</li><li>1 tbsp raspberry vinegar or vinegar + raspberry jam</li><li>2 tbsp sweetener (only use if using vinegar without jam)</li>
+                    <li>1/2 pepper</li><li>pineapple</li><li>1 carrot</li>
+                    <li>2 drops of lemon juice</li><li>oregano for taste</li><li>1 tsp ginger</li> 
+                </ul>
+            </section>
+            <section class="intructions">
+                <ul>
+                    <li>slice the chicken into strips and place in a bowl/small oven dish. Add the spring onions, light soy sauce garlic and seasoning. Place in the fridge for 30 minutes.</li>
+                    <li>While the chicken marinades chop the pepper and carrots. Also put the noodles in warm water for 10 minutes.</li>
+                    <li> Heat up a deep frying pan or wok and spray with fry light. When hot add the chicken and marinade.</li>
+                    <li>After a few minutes add the dark soy and passata. Let it simmer. Once it's simmering add the paprika, five spice and vinegar(and sweetener).</li>
+                    <li>Add the carrot and lemon juice. Once mixed add the ginger and oregano leaving the pineapple to last.</li>
+                </ul>
+            </section>
+
+          </article>
+          
+          <div id="apple-crumble" class="Recipe">
+            <h3>Apple Crumble</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Tokyo" class="Recipe">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </section>
+    </body>
+</html>
