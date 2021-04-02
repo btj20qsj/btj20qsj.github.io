@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="en">
         <!--slideshow-->
         <title>FOOD</title>
         <!--SEARCH ENGINE INFORMATION-->
+        <meta charset="utf-8"/>
         <meta name="description" content="A collection of interests and hobbies">
         <meta name="keywords" content="art,food,recipes,books,lego,krita,minecraft">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,62 +12,166 @@
         <!--CSS AND JAVASCRIPT-->
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
         <script defer src="js/scripts.js"></script>
+        <script defer src="js/slideshow.js"></script>
         <!--EXTERNAL LINKS-->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous"/>
-    </head> 
+    </head>
+
     <body>
         <nav class="Navigation">
+          <ul>
+            <li><a href="art.html">CRAFTS</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="food.html">FOOD</a></li>
+              <li><a href="game.html">GAMES</a></li>
+          </ul>
+      </nav>
+      <div class="banner">COOKERY</div>
+      <section class="wrapper">
+        <nav>
+          <ul>
+            <li><a href="#">Starters</a>
+              <ul>
+                <li ><a class="tablinks" onclick="openRecipe(event, 'prawn-cocktail')">Prawn Cocktail</a></li>
+                <li><a  class="tablinks" onclick="openRecipe(event, 'bread-dip')">Bread dip</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Mains</a>
+              <ul>
+                <li ><a class="tablinks" onclick="openRecipe(event, 'Sweet-sour')">S&S chicken</a></li>
+                <li ><a class="tablinks" onclick="openRecipe(event, 'soup')">tomato soup</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Desserts</a>
+              <ul>
+                <li ><a class="tablinks" onclick="openRecipe(event, 'apple-crumble')">Apple Crumble</a></li>
+                <li ><a class="tablinks" onclick="openRecipe(event, 'brownies')">Brownies</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <article class="explainer">
+          Hey look, you found the aspiring chef part of me. I hope you enjoy these recipes
+        </article>
+        <div id="Sweet-sour" class="Recipe">
+          <h3>Sweet and Sour Chicken</h3>
+          <section class="ingredients">
+              <ul>
+                  <li>6 boneless chicken fillets</li><li>6 spring oinions chopped</li><li>1 garlic clove or 1tsp garlic powder</li>
+                  <li>2 tbsp light soy sauce</li><li>seasoning</li><li>fry light</li>
+                  <li>1 tbsp dark soy sauce</li><li>1 tsp paprika</li><li>2 tsp Chinese five spice</li>
+                  <li>100ml passata or a tin of chopped tomatoes whizzed up</li><li>1 tbsp raspberry vinegar or vinegar + raspberry jam</li><li>2 tbsp sweetener (only use if using vinegar without jam)</li>
+                  <li>1/2 pepper</li><li>pineapple</li><li>1 carrot</li>
+                  <li>2 drops of lemon juice</li><li>oregano for taste</li><li>1 tsp ginger</li> 
+              </ul>
+          </section>
+          <section class="intructions">
+              <ul>
+                  <li>slice the chicken into strips and place in a bowl/small oven dish. Add the spring onions, light soy sauce garlic and seasoning. Place in the fridge for 30 minutes.</li>
+                  <li>While the chicken marinades chop the pepper and carrots. Also put the noodles in warm water for 10 minutes.</li>
+                  <li> Heat up a deep frying pan or wok and spray with fry light. When hot add the chicken and marinade.</li>
+                  <li>After a few minutes add the dark soy and passata. Let it simmer. Once it's simmering add the paprika, five spice and vinegar(and sweetener).</li>
+                  <li>Add the carrot and lemon juice. Once mixed add the ginger and oregano leaving the pineapple to last.</li>
+              </ul>
+          </section>
+        </div>
+        <div id="apple-crumble" class="Recipe">
+          <h3>Apple Crumble</h3>
+          <section class="ingredients">
             <ul>
-                <li><a href="art.html">CRAFTS</a></li>
-                <li><a href="books.html">BOOK</a></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="food.html">FOOD</a></li>
-                <li><a href="game.html">GAMES</a></li>
+                <li>500g of apple</li><li>150g plain flour</li><li>75g butter</li>
+                <li>75g sugar(crumble)</li><li>50g sugar(filling)</li>
             </ul>
-        </nav>
-        <section>
-        <nav class="tab">
-            <button class="tablinks" onclick="openRecipe(event, 'Sweet-sour')">S&S chicken</button>
-            <button class="tablinks" onclick="openRecipe(event, 'apple-crumble')">Apple Crumble</button>
-            <button class="tablinks" onclick="openRecipe(event, 'Tokyo')">Tokyo</button>
-        </nav>
-          <article class="explainer">
-            Hey look, you found the aspiring chef part of me. I hope you enjoy these recipes
-          </article>
-          <article id="Sweet-sour" class="Recipe">
-            <h3>Sweet and Sour chicken</h3>
-            <section class="ingredients">
-                <ul>
-                    <li>6 boneless chicken fillets</li><li>6 spring oinions chopped</li><li>1 garlic clove or 1tsp garlic powder</li>
-                    <li>2 tbsp light soy sauce</li><li>seasoning</li><li>fry light</li>
-                    <li>1 tbsp dark soy sauce</li><li>1 tsp paprika</li><li>2 tsp Chinese five spice</li>
-                    <li>100ml passata or a tin of chopped tomatoes whizzed up</li><li>1 tbsp raspberry vinegar or vinegar + raspberry jam</li><li>2 tbsp sweetener (only use if using vinegar without jam)</li>
-                    <li>1/2 pepper</li><li>pineapple</li><li>1 carrot</li>
-                    <li>2 drops of lemon juice</li><li>oregano for taste</li><li>1 tsp ginger</li> 
-                </ul>
-            </section>
-            <section class="intructions">
-                <ul>
-                    <li>slice the chicken into strips and place in a bowl/small oven dish. Add the spring onions, light soy sauce garlic and seasoning. Place in the fridge for 30 minutes.</li>
-                    <li>While the chicken marinades chop the pepper and carrots. Also put the noodles in warm water for 10 minutes.</li>
-                    <li> Heat up a deep frying pan or wok and spray with fry light. When hot add the chicken and marinade.</li>
-                    <li>After a few minutes add the dark soy and passata. Let it simmer. Once it's simmering add the paprika, five spice and vinegar(and sweetener).</li>
-                    <li>Add the carrot and lemon juice. Once mixed add the ginger and oregano leaving the pineapple to last.</li>
-                </ul>
-            </section>
+          </section>
+          <section class="intructions">
+            <ul>
+                <li>peel and chop the apples. Then place in a pan with 50g of sugar and a small amount of water. Simmer for awhile til slightly soft</li>
+                <li>Cut the butter into cubes and add to the plain flour. Also add the 75g of sugar. Crumble together till you have a fine crumb mixture</li>
+                <li>Drain most of the water of the apples and place them in a oven proof dish. Cover with the crumble and place in a pre heated oven at gas mark 4.</li>
+                <li>When the crumble is golden brown remove from the oven and leave to cool</li>
+            </ul>
+          </section> 
+        </div>
+        <div id="soup" class="Recipe">
+          <h3>Tomato Soup</h3>
+          <section class="ingredients">
+            <ul>
+                <li>1kg Tomatoes</li><li>medium onion</li><li>Carrot</li>
+                <li>Celery</li><li>seasoning</li><li>olive oil</li>
+                <li>2 tbsp tomato puree</li><li>pinch a sugar</li><li>bay leaves</li>
+                <li>2pints of vegetable stock</li>
 
-          </article>
-          
-          <div id="apple-crumble" class="Recipe">
-            <h3>Apple Crumble</h3>
-            <p>Paris is the capital of France.</p> 
-          </div>
-          
-          <div id="Tokyo" class="Recipe">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-          </div>
-        </section>
+            </ul>
+          </section>
+          <section class="intructions">
+            <ul>
+                <li>Dice up the tomatoe,onion,carrot, and celery.</li>
+                <li>Warm the olive oil in a pan on a low heat. Tip in the vegetables once the oil is slightly sizzling. Cook until soften (25 or so minutes)</li>
+                <li>Throw in the rest of the ingredients, stirring as you do.Cover and leave to simmer for roughly 10 minutes</li>
+                <li>Remove from the heat and allow any steam to escape, before fishing out the bay leaves. </li>
+                <li>Puree the soup until desire consistency. Store any soup you aren't immediately having.</li>
+                <li>To warm: place in a pan on a medium heat, stirring occasionally until bubbling.</li>
+            </ul>
+          </section> 
+        </div>
+        <div id="brownies" class="Recipe">
+          <h3>Brownies</h3>
+          <section class="ingredients">
+            <ul>
+                <li>200 grams of dark chocolate. </li><li>50 grams of plain flour. </li><li>1 tablespoon of baking powder. </li>
+                <li>125 grams of soft brown sugar. </li><li>2 medium eggs. </li><li>Few drops of vanilla essence. </li>
+                <li>25 grams of coco powder. </li>
+            </ul>
+          </section>
+          <section class="intructions">
+            <ul>
+                <li>Preheat the oven to 180°c/ fan 160°c. Line with baking parchment and grease evenly with butter a 18 cm square tin.</li>
+                <li>Melt 50 grams of the dark chocolate in a bowl over simmering water (bain marie). Once melted add the butter and melt stir frequently so it won't burn. Once melted remove from the saucepan.</li>
+                <li>In a mixing bowl put sugar, eggs and vanilla essence. Mix to get her. Then sift the flour, coco powder and baking powder in and mix well. Once this is mixed add the melted chocolate and mix. Then break the rest of the chocolate in chunks and stir in the mixture.</li>
+                <li>Place the brownie mix in the tray evenly and put in the preheated oven for 40 minutes or when the brownie starts shrinking from the side of the tin and the center is firm</li>
+                <li>Once cooked take out of the oven and leave to cool in the tin. Once cool take out tin and place on a cooling rack. Then remove the paper and cut into squares.</li>
+            </ul>
+          </section> 
+        </div>
+        <div id="bread-dip" class="Recipe">
+          <h3>Bread Sticks with Dip</h3>
+          <section class="ingredients">
+            <ul>
+                <li>23 tsp Balsamic Vinger</li><li>1/2 cup Extra virgin olive oil</li><li>seasoning</li>
+                <li>450g strong bread flour</li><li>7g fast action dried yeast</li><li>1 1/5 tsp salt</li>
+                <li>250-275ml warm water</li>
+            </ul>
+          </section>
+          <section class="intructions">
+            <ul>
+                <li>In a bowl, put the flour, yeast and salt.Keep the salt away from the yeast, preferably by placing opposite sides of the bowl</li>
+                <li>Steadly add the water, mixing as you go to avoid lumps.Continue to add the water until the dough is slightly sticky </li>
+                <li>Turn out the dough onto a floured surface and knead for 10 minutes</li>
+                <li>Divide the dought in to equal portions and roll into the desired shapes. Once rolled place onto a floured backing tray.</li>
+                <li>Cover the tray(s)with lightly oiled cling film and place in a warm place for 30 minture to let it proove. While the bread prooves mix together the vinger and oil to make a dip. </li>
+                <li>Heat the oven to Gas Mark 6. Once heated, uncover the breadsticks and bake for 20 minutes or until golden rown</li>
+              </ul>
+          </section> >
+        </div>
+        <div id="prawn-cocktail" class="Recipe">
+          <h3>Prawn Cocktail</h3>
+          <section class="ingredients">
+            <ul>
+                <li>175g raw prawns</li><li>1/2 garlic clove</li><li>1/2 tsp ginger</li>
+                <li>1 egg wite </li><li>spring onion</li><li>1 tsp light soy sauce </li>
+                <li>4 slices of bread </li><li>2 tsp sesame oil </li><li>sesame seeds </li>
+            </ul>
+          </section>
+          <section class="intructions">
+            <ul>
+                <li>Blend together the prawns, garlic, ginger,egg white,spring onion,and soy until it is a paste. Chill for 30 minutes or until needed</li>
+                <li>Under the grill, toast one side of the bread. Brush the untoatsed side with sesame oil</li>
+                <li>On the toasted side spread the prawns and sprinkle on the sesame seeds. </li>
+                <li>Oven cook the toast for 10 minutes on Gas mark 9 or until crisp</li>
+            </ul>
+          </section> 
+        </div>
+      </section>
     </body>
 </html>
