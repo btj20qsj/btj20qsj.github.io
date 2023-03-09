@@ -1,4 +1,4 @@
-fetch('htttp://www.btj20qsj.github.io/assets/Teachers.json')
+fetch('http://www.btj20qsj.github.io/assets/Teachers.json')
   .then(function (response) {
     return response.json();
   })

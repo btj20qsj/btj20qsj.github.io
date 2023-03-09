@@ -1,4 +1,5 @@
-[
+{
+	"Teachers":[
 	 {
 	   "StaffNum": 0,
 	   "TeacherName": "Dr Hafiz Ahmed",
@@ -300,4 +301,5 @@
 	   "Email": "liyang.yue",
 	   "StudyArea": "Lecturer"
 	 }
-]
+	]
+}

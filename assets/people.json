@@ -1,0 +1,154 @@
+[
+    {
+      "StaffNum": 0,
+      "TeacherName": "Dr. Roger Giddings",
+      "RoomNum": "231",
+      "Email": "r.p.giddings",
+      "StudyArea": "Senior Lecturer in Optical Communications & DSP",
+      "image":"Roger_giddings.jpg"
+    },
+    {
+      "StaffNum": 1,
+      "TeacherName": "Dr Yanhua Hong",
+      "RoomNum": "218",
+      "Email": "y.hong",
+      "StudyArea": "Senior Lecturer in Optoelectronics",
+      "image":"yanhua_hong.jpg"
+    },
+    {
+      "StaffNum": 2,
+      "TeacherName": "Dr Mohammed Mabrook",
+      "RoomNum": "224",
+      "Email": "m.f.mabrook",
+      "StudyArea": "Senior Lecturer in Organic Electronics / Senior Tutor",
+      "image":"mohammed_mabrook.jpg"
+    },
+    {
+      "StaffNum": 3,
+      "TeacherName": "Dr Cristiano Palego",
+      "RoomNum": "233",
+      "Email": "c.palego",
+      "StudyArea": "Senior Lecturer in Mircowave Instrumentation",
+      "image":"cristiano_palego.jpg"
+    },
+    {
+      "StaffNum": 4,
+      "TeacherName": "Dr Iestyn Pierce",
+      "RoomNum": "215",
+      "Email": "i.pierce",
+      "StudyArea": "Head of School / Senior Lecturer",
+      "image":"iestyn_pierce.jpg"
+    },
+    {
+      "StaffNum": 5,
+      "TeacherName": "Dr Daniel Roberts",
+      "RoomNum": "221",
+      "Email": "d.r.g.roberts",
+      "StudyArea": "Lecturer in Electronic Engineering",
+      "image":"daniel_roberts.jpg"
+    },
+    {
+      "StaffNum": 6,
+      "TeacherName": "Professor Jianming Tang",
+      "RoomNum": "229",
+      "Email": "j.tang",
+      "StudyArea": "Professor in Optical Communications",
+      "image":"jianming_tang.jpg"
+    },
+    {
+      "StaffNum": 7,
+      "TeacherName": "Dr Liyang Yue",
+      "RoomNum": "225",
+      "Email": "l.yue",
+      "StudyArea": "Lecturer",
+      "image":"liyang_yue.jpg"
+    },
+    {
+      "StaffNum": 8,
+      "TeacherName": "Dr Cameron Gray",
+      "RoomNum": "328",
+      "Email": "c.gray",
+      "StudyArea": "Lecturer in Cyber Security",
+      "image":"cameron_gray.jpg"
+    },
+    {
+      "StaffNum": 9,
+      "TeacherName": "Dr Dave Perkins",
+      "RoomNum": "316",
+      "Email": "d.perkins",
+      "StudyArea": "Senior Lecturer in Computer Science",
+      "image":"dave_perkins.jpg"
+    },
+    {
+      "StaffNum": 10,
+      "TeacherName": "Dr Franck Vidal",
+      "RoomNum": "324",
+      "Email": "f.vidal",
+      "StudyArea": "Senior Lecturer in Computer Science",
+      "image":"franck_vidal.png"
+    },
+    {
+      "StaffNum": 11,
+      "TeacherName": "Prosser Jonathan Roberts",
+      "RoomNum": "322",
+      "Email": "j.c.roberts",
+      "StudyArea": "Professor in Visualisation",
+      "image":"jonathan_roberts.jpg"
+    },
+    {
+      "StaffNum": 12,
+      "TeacherName": "Dr LLyr Ap Cenydd",
+      "RoomNum": "329",
+      "Email": "llyr.ap.cenydd",
+      "StudyArea": "Lecture in Visualisation (CCC)",
+      "image":"llyr_ap_cenydd.jpg"
+    },
+    {
+      "StaffNum": 13,
+      "TeacherName": "Dr Panagiotis D. Ritsos",
+      "RoomNum": "326",
+      "Email": "p.ritsos",
+      "StudyArea": "Lecturer in Visualisation",
+      "image":"panagiotis_d_ritsos.jpg"
+    },
+    {
+      "StaffNum": 14,
+      "TeacherName": "Dr Saad Mansoor",
+      "RoomNum": "323",
+      "Email": "s.mansoor",
+      "StudyArea": "Senior Lecturer in Computer Science",
+      "image":"saad_mansoor.jpg"
+    },
+    {
+      "StaffNum": 15,
+      "TeacherName": "Mr Joshua Davies",
+      "RoomNum": "330",
+      "Email": "joshua.davies",
+      "StudyArea": "Lecturer",
+      "image":"joshua_davies.jpg"
+    },
+    {
+      "StaffNum": 16,
+      "TeacherName": "Professor Simon Middleburgh",
+      "RoomNum": "NFI",
+      "Email": "s.middleburgh",
+      "StudyArea": "Senior Lecturer in Nuclear Control and Instrumentation",
+      "image":"simon_middleburgh.jpg"
+    },
+    {
+      "StaffNum": 17,
+      "TeacherName": "Dr Hafiz Ahmed",
+      "RoomNum": "?",
+      "Email": "hafiz.ahmed",
+      "StudyArea": "Senior Lecturer in Nuclear Control and Instrumentation",
+      "image":"hafiz_ahmed.png"
+    },
+    {
+      "StaffNum": 18,
+      "TeacherName": "Dr Michael Rushton",
+      "RoomNum": "?",
+      "Email": "m.rushton",
+      "StudyArea": "Senior Research Lecturer",
+      "image":"michael_rushton.jpg"
+    }
+   ]
