@@ -42,12 +42,12 @@ h6                  {margin:0 1vw 0 0;}
 #staffimage                    {height:  78vh;width:   30vw;margin:1vh;float:left;object-fit: contain;}
 #staffinfo                     {height:  65vh;width: 37.5vw;margin:1vh 1vh 1vh 0.5vh;text-align:left;float:right;padding:13vh 0vh 0vh 0vh;}
 
-/*Page X Specfics*/
-
-
+/*Page 3 Specfics (Spinning Logo)*/
+.site-footer__logo img         {height:50vh;width: auto; animation: spin 15s linear infinite;position: fixed;top: 20vh;left: 70vh;}
+.btn                           {background-color:rgb(238, 118, 51); border:none; color:white;text-align:center;cursor:pointer;border-radius:3vh;font-size:5vh;width:98vw;padding:10vh;margin:1vh 1vw 1vh 1vw;}
 /*Animations*/
-@keyframes spin               { 0% { transform: rotateY(0deg);} 60% { transform: rotateY(360deg);}100% { transform: rotateY(360deg);}}
-@keyframes scroll             { 0% { transform: translateX(0);} 100% { transform: translateX(calc(-210vw));}}
+@keyframes spin                { 0% { transform: rotateY(0deg);} 60% { transform: rotateY(360deg);}100% { transform: rotateY(360deg);}}
+@keyframes scroll              { 0% { transform: translateX(0);} 100% { transform: translateX(calc(-210vw));}}
 
 /*screen resolution changes*/
 
