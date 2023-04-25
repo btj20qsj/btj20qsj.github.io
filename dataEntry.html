@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <!--Metadata-->
+        <meta charset="utf-8"> <!--Unversal character set-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--compatibly across various broswers and such-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--makes the page display well on all devices-->
+
+        <meta name="Author" content="Bethan Jones">
+        <meta name="description" content="Data input for staff cards and announcements">
+        <meta name="keywords" content="Dissertation, dynamic, Noticeboard">
+
+        <!--External Links-->
+        <link rel="stylesheet" href="css/Styling.css" type="text/css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous"/>
+
+    
+
+        <!-- <base href="https://btj20qsj.github.io/" target="_blank">-->
+
+        <Title>Data Entry</Title>
+    </head>
+
+    <body>
+        <header>
+            <div class="leftside-header">
+            <a href="https://btj20qsj.github.io/Index"><img src="assets/logo.png" alt="Bangor Logo" loading="lazy" class="logo-header"></a>    
+            </div>
+            <div class="rightside-header">
+            <h1>Data Entry</h1>
+            </div>
+        </header>
+        <main>
+            <div class = "staffdata">
+                <form>
+                    <input type="hidden" id="StaffNum" name="StaffNum"><br>
+                    <label for="TeacherName">Teacher's Full Name and Prefix</label><br>
+                    <input type="text" id="TeacherName" name="TeacherName"><br>
+                    <label for="RoomNum">Office room number</label><br>
+                    <input type="number" id="RoomNum" name="RoomNum"><br>
+                    <label for="Email">School assigned email</label><br>
+                    <input type="text" id="Email" name="Email"><br>
+                    <label for="StudyArea">Area of Study</label><br>
+                    <input type="text" id="StudyArea" name="StudyArea"><br><br>
+                    <label for="image">Image file</label><br>
+                    <input type="file" id="image" name="image"><br>
+                    <br>
+                    <input type="submit" value="submit"><br>
+                </form>                
+            </div>
+
+        </main>
+        <footer>
+        </footer>        
+    </body>    
+    <script src="js/dataHandling.js"></script>
+</html>
