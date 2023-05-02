@@ -41,14 +41,14 @@ function scroller(){
        for (let a = 0; a < data.length;a++)
        {
         var div = document.createElement("div");
-        div.innerHTML = '<img src="assets/'+ data[a].image + '"/>';
+        div.innerHTML = '<img src="ASSETS/'+ data[a].image + '"/>';
         div.setAttribute("class","slide");
         mainContainer.appendChild(div);
        }
        for (let a = 0; a < data.length;a++)
        {
         var div = document.createElement("div");
-        div.innerHTML = '<img src="assets/'+ data[a].image + '"/>';
+        div.innerHTML = '<img src="ASSETS/'+ data[a].image + '"/>';
         div.setAttribute("class","slide");
         mainContainer.appendChild(div);
        }
