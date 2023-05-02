@@ -22,7 +22,7 @@ function appendData()
         div.setAttribute("id","staffinfo");
         var img = document.createElement("img");
         img.setAttribute("id","staffimage");
-        img.setAttribute("src","/assets/"+ data[i].image);
+        img.setAttribute("src","ASSETS/"+ data[i].image);
         mainContainer.appendChild(div);
         mainContainer.appendChild(img);                                             //adds the above to the container div
     })
