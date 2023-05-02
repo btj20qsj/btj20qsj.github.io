@@ -1,7 +1,8 @@
+scroller();
 appendData();
 function appendData() 
 {
-    fetch('assets/people.json')
+    fetch('ASSETS/Staff.json')
     .then(function (response) {return response.json();})
     .then(function (data) 
     {
@@ -28,3 +29,33 @@ function appendData()
     .catch(function (err) {console.log('error: ' + err);}); 
 }
 setInterval(appendData,6000);
+
+function scroller(){
+    
+    fetch('ASSETS/Staff.json')
+    .then(function (response) {return response.json();})
+    .then(function (data) 
+    {
+        console.log("hello");
+        var mainContainer = document.getElementById("slide-track");      
+       for (let a = 0; a < data.length;a++)
+       {
+        var div = document.createElement("div");
+        div.innerHTML = '<img src="assets/'+ data[a].image + '"/>';
+        div.setAttribute("class","slide");
+        mainContainer.appendChild(div);
+       }
+       for (let a = 0; a < data.length;a++)
+       {
+        var div = document.createElement("div");
+        div.innerHTML = '<img src="assets/'+ data[a].image + '"/>';
+        div.setAttribute("class","slide");
+        mainContainer.appendChild(div);
+       }
+       document.documentElement.style.setProperty('--scrolltranslation','-'+(10*(data.length))+'vw');
+
+    })
+    
+    .catch(function (err) {console.log('error: ' + err);}); 
+}
+
