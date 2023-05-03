@@ -8,7 +8,7 @@ function HolidayMagic()
     var TodaysDate = new Date();
     console.log(TodaysDate.getMonth);
     //To test theme set month check to current month
-    if(TodaysDate.getMonth()==4)                                                               //for December run the festive theme
+    if(TodaysDate.getMonth()==11)                                                               //for December run the festive theme
     {
         CSSlink.setAttribute('href','CSS/Style_Christmas.css');
         EventBgd.setAttribute('src','JS/xmasLights.js');
@@ -25,7 +25,7 @@ function HolidayMagic()
         '<div class="TreeStump"></div>'+
         '</div>';
     }
-    else if(TodaysDate.getMonth()==9)                                                           //for October run the spooky theme
+    else if(TodaysDate.getMonth()==4)                                                           //for October run the spooky theme
     {
         CSSlink.setAttribute('href','CSS/Style_Halloween.css');
         EventBgd.setAttribute('src','JS/Lighting.js');
