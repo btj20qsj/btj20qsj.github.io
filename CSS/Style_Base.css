@@ -27,7 +27,7 @@ h6                  {margin:0 1vw 0 0;}
 .yellow-line                   {width: 100%;background-color: rgb(253, 180, 21);height: 0.5%;margin-top: 0.2%; float:right;}
 
 /*Page 1 Specfics (Multiple infinate Carousels)*/
-#slider                        {background:rgba(85, 85, 224, 0.604);height: 15vh;margin: auto;overflow: hidden;position: fixed;z-index:1;bottom:0;margin:1vh 0vw;}
+#slider                        {background:rgba(119, 177, 206, 1);height: 15vh;margin: auto;overflow: hidden;position: fixed;z-index:1;bottom:0;margin:1vh 0vw;}
 #slider::before,.slider::after {content: "";height: 100%;position: absolute; width: 5%; z-index: 2;}
 #slider::after                 {right: 0;top: 0;transform: rotateZ(180deg);}
 #slider::before                {left: 0;top: 0;}

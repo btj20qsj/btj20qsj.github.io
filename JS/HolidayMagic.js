@@ -4,7 +4,7 @@ function HolidayMagic()
 {
     var CSSlink = document.getElementById('EventStyle');
     var EventBgd = document.createElement('script');
-     var festiveContainer = document.getElementById("FestiveObj");
+    var festiveContainer = document.getElementById("FestiveObj");
     var TodaysDate = new Date();
     console.log(TodaysDate.getMonth);
     //To test theme set month check to current month
@@ -25,7 +25,7 @@ function HolidayMagic()
         '<div class="TreeStump"></div>'+
         '</div>';
     }
-    else if(TodaysDate.getMonth()==4)                                                           //for October run the spooky theme
+    else if(TodaysDate.getMonth()==9)                                                           //for October run the spooky theme
     {
         CSSlink.setAttribute('href','CSS/Style_Halloween.css');
         EventBgd.setAttribute('src','JS/Lighting.js');
@@ -45,7 +45,21 @@ function HolidayMagic()
     else if(TodaysDate.getMonth()==1 && TodaysDate.getDate()>=7 && TodaysDate.getDate()<=14 )   //for the week leading up to valentines day have the romantic theme
     {
         CSSlink.setAttribute('href','CSS/Style_Valentines.css');
-        EventBgd.setAttribute('src','');
+        EventBgd.setAttribute('src','JS/lovehearts.js');
+        festiveContainer.replaceChildren();        
+        document.body.appendChild(EventBgd);
+
+        console.log("DONE STAGE 1");
+        festiveContainer.innerHTML = 
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(5) +'s; animation-duration:60s; margin-left:'+getRandomInt(51)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(15) +'s; animation-duration:60s; margin-left:'+getRandomInt(51)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(5) +'s; animation-duration:60s; margin-left:'+getRandomInt(101)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(15) +'s; animation-duration:60s; margin-left:'+getRandomInt(101)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(5) +'s; animation-duration:40s; margin-left:'+getRandomInt(51)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(15) +'s; animation-duration:40s; margin-left:'+getRandomInt(51)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(5) +'s; animation-duration:40s; margin-left:'+getRandomInt(101)+'vw;" />'+
+        ' <img alt="snowflakes" src="/ASSETS/Love-clipart-free-clipart-images.png" class="snowExample" style="width: 400px; animation-delay:-'  + getRandomInt(15) +'s; animation-duration:40s; margin-left:'+getRandomInt(101)+'vw;" />';
+        console.log("DONE STAGE 2");
     }
     else if(TodaysDate.getMonth()==10 && TodaysDate.getDate()>=1 && TodaysDate.getDate()<=5 )   //from the end of halloween to guy fawkes night have fireworks included 
     {
@@ -57,4 +71,8 @@ function HolidayMagic()
         CSSlink.setAttribute('href','CSS/Style_Normal.css');
         EventBgd.setAttribute('src','');
     }
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
 }
