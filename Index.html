@@ -15,8 +15,8 @@
         <link rel="stylesheet" href="CSS/Style_Normal.css" type="text/css" class="EventStyle" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous"/>
-
-        <script src="JS/HolidayMagic.js"></script>
+        <script src="JS/tabLoading.js"></script>
+   
 
         <!-- <base href="https://btj20qsj.github.io/" target="_blank">-->
 
@@ -25,20 +25,44 @@
     <body>
         <header>
             <div class="leftside-header">
-            <a><img src="ASSETS/logo.png" alt="Bangor Logo" loading="lazy" class="logo-header"></a>
+            <img src="ASSETS/logo.png" alt="Bangor Logo" loading="lazy" class="logo-header">
             </div>
             <div class="rightside-header">
             <h1>Portal</h1>
             </div>
         </header>
         <main>
-            <a href="https://btj20qsj.github.io/StaffCards">
-            <button class="btn">STAFF INFO CARDS</button>
-            </a>
-            <a href="https://btj20qsj.github.io/Logo">
-            <button class="btn">SPINNING LOGO</button>
-            </a>
-        </main>
+            <div class="tabs">
+                <button class="btn active"onclick="openTab(event, 'DataEntry')"id="defaultOpen">DATA ENTRY</button>
+                <button class="btn" onclick="openTab(event, 'AnnoucementData')">ANNOUNCEMENT ENTRY</button>                
+                <button class="btn elsewhere" onclick="window.location.href='https\:\/\/btj20qsj.github.io/StaffCards';">STAFF CARDS</button>
+                <button class="btn elsewhere" onclick="window.location.href='https\:\/\/btj20qsj.github.io/Logo';">SPINNING LOGO</button>
+                <button class="btn elsewhere" onclick="window.location.href='https\:\/\/btj20qsj.github.io/Announcements';">ANNOUNCEMENTS</button>
+            </div>
+            <div id="DataEntry"  class="tabcontent" >
+                <form>
+                    <input type="text" id="Firstname" name="FirstName" placeholder="First Name Of Staff Member: John" size="50"><br>
+                    <input type="text" id="Lastname" name="LastName"placeholder="Last Name Of Staff Member: Smith"size="50"><br>
+                    <input type="text" id="Roomnum" name="RoomNum"placeholder="Office number:321"size="50"><br>
+                    <input type="text" id="Email" name="Email"placeholder="Email Address: joh20smi. do NOT include @bangor.ac.uk"size="50"><br>
+                    <input type="text" id="studyArea" name="StudyArea"placeholder="Area of Study: Proton Lasers"size="50"><br>
+                    <input type="file" id="image" name="Image" placeholder="Image Upload:"size="50"><br>
+                    <input type="submit" id="submission" name="submission"><br>
+                </form>
+            </div>
+            <div id="AnnoucementData" class="tabcontent">
+                <form>
+                    <input type="text" id="Message" name="Message" placeholder="What is the Announcement?" size="50"><br>
+                    <label> Run the announcement from...</label><input type="date" id="RunFrom" name="RunFrom" size="50"><br>
+                    <label> Run the announcement until...</label><input type="date" id="RunTil" name="RunTil" placeholder="until..." size="50"><br>
+                    <input type="submit" id="submission" name="submission"><br>
+                </form>
+            </div>
+        </main> 
+        <script>
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>>
         <footer>
         </footer>        
     </body>

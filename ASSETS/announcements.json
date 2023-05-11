@@ -1,0 +1,38 @@
+[
+    {
+        "MsgFrom": "NOTICE",
+        "Announcement" : "No announcements",
+        "RunFrom": "1999-05-01",
+        "RunTill":"2220-05-19"
+    },
+    {
+        "MsgFrom": "Employability Services",
+        "Announcement" : "Tell us about your achievements to be in with a chance of winning £500! Deadline extended! New deadline: 5PM Friday 19th May",
+        "RunFrom": "2023-05-01",
+        "RunTill":"2023-05-19"
+    },
+    {
+        "MsgFrom": "IT Services",
+        "Announcement" : "Routine Maintance on internet will cause disruption on 2nd June. Sorry for any inconvenience",
+        "RunFrom": "2023-05-23",
+        "RunTill":"2023-06-02"
+    },
+    {
+        "MsgFrom": "Electronic Engineers",
+        "Announcement" : "Please remember to return any equipment at end of year",
+        "RunFrom": "2023-05-10",
+        "RunTill":"2023-06-15"
+    },
+    {
+        "MsgFrom": "Bradley",
+        "Announcement" : "Stop leaving your graffiti tag everywhere. You are literally signing your name on your damage",
+        "RunFrom": "2023-05-10",
+        "RunTill":"2023-06-01"
+    },
+    {
+        "MsgFrom": "All",
+        "Announcement" : "A trip has been arranged to Manchester for May 5th. Any students wishing to join should sign up via the link in their emails. !IMPORTANT! This trip is for Final year students only ",
+        "RunFrom": "2023-04-10",
+        "RunTill":"2023-06-05"
+    }
+]

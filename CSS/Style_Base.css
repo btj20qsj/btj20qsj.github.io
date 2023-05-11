@@ -1,56 +1,68 @@
 :root               {--scrolltranslation: 0;}
-/* top right bottom left*/
 /*Page basic styles*/
-html                {height:100vh;width:100vw;line-height:1.5;overflow-y:hidden;}
-body                {height:100vh;width:100vw;margin:0;padding:0;font-family: "helvetica Neue", helvetica,Arial,sans-serif;}
-header              {height:  0vh;width:100vw;}
-main                {height:100vh;width:100vw;}
-footer              {height:  0vh;width:100vw;}
+html    {height:100vh;width:100vw;line-height:1.5;overflow-y:hidden;background-color: rgb(107,185,220)}
+body    {height:100vh;width:100vw;margin:0;padding:0;font-family: "helvetica Neue", helvetica,Arial,sans-serif;}
+header  {height:  0vh;width:100vw;}
+main    {height:100vh;width:100vw;}
+footer  {height:  0vh;width:100vw;}
 
 /*Text Formats*/
-p                   {margin:0;}
-h1                  {margin:0 1vw 0 0;text-align: right;font-size:4.5vh;}
-h2                  {margin:0 1vw 0 0;font-size: 5vh;}
-h3                  {margin:0 1vw 0 0;font-size: 3vh;}
-h4                  {margin:0 1vw 0 0;}
-h5                  {margin:0 1vw 0 0;}
-h6                  {margin:0 1vw 0 0;}
+h1      {margin:0.5vh 1vw 0 0;text-align: right;font-size:4.5vh;height:  8vh;}
+/*Web Portal*/
+.logo-header           {height:  6vh;width: auto;margin:0vh 0vw 0vh 1vw;}
+.leftside-header       {height:  8vh;width: 70vw;background:rgb( 203, 084, 057);clip-path: polygon(  0%   0%,100%   0%, 95.5% 100%,  0% 100%);
+                        float:left;display: flex;align-items: center;}
+.rightside-header      {height:  8vh;width: 30vw;background:rgb( 253, 180, 021);clip-path: polygon( 10%   0%,100%   0%,  100% 100%,  0% 100%);
+                        float:right;}
 
+.btn                   {background-color: rgb(238,  118, 51); color:white;text-align:center;cursor:pointer;border-radius:3em 3em 0em 0em;
+                        font-size:1vw;width:15vw;height:10vh;margin:1vh 0vw 0vh 0vw;border-bottom: 0;box-shadow: inset 0px -1em 3em rgb(238,  80, 51) ;}
+.btn:hover             {background-color: rgb(238,  80, 51);}
+.btn.active            {box-shadow: 0 0 0;}
+.elsewhere             {background-color: rgb(29, 25, 105); box-shadow: inset 0px -1em 3em rgb(14, 5, 53) ;}
+.elsewhere:hover       {background-color:rgb(19, 16, 70);}
+.tabs                  {width:80vw;margin:0 auto;overflow:hidden;}
+.tabcontent            {width:90vw;margin:0 auto;overflow:hidden;background:rgb(238, 118, 51);border-radius:3em;height:70vh;display:none;
+                        box-shadow: 0px 0.5em 1em rgb(238,  90, 51);}
 
-/*Logos, footers & headers*/
-.logo-header                   {height:  6vh;width: auto;margin:0vh 0vw 0vh 1vw;}
-.leftside-header               {height:  6vh;width: 70vw;background:rgb( 203, 084, 057);margin:1vh 0vw 1vh 0vw;clip-path: polygon(  0%   0%,100%   0%, 95.5% 100%,  0% 100%);float:left;}
-.rightside-header              {height:  6vh;width: 30vw;background:rgb( 253, 180, 021);margin:1vh 0vw 1vh 0vw;clip-path: polygon( 10%   0%,100%   0%,  100% 100%,  0% 100%);float:right;}
-.site-header__logo img         {margin-left: 2%;height:70px;width: auto;margin-top:0.5%;}
-.site-header__brand 	       {background: #bB2233;text-align: right;padding-right: 1%; font-weight: 200%;color:white;}
-.site-header__brand            {float: right;height: 70px;width: 70%;clip-path: polygon(25% 1%,100% 1%,100% 100%,10% 100%);}
-.yellow-line                   {width: 100%;background-color: rgb(253, 180, 21);height: 0.5%;margin-top: 0.2%; float:right;}
+form        {padding:10vh 0em;margin:auto;width:80vw;height:60vh;}
+input       {display:block;width:70vw;padding:0.5em;border-radius:10px;border: 1px solid #eee;transition: .3s border-color;margin:auto;}
+label       {display:block;width:70vw;margin-left:auto;margin-right: auto;}
+input[type="submit"]{width:50vw;}
+input[type="submit"]{width:50vw;}
+input:hover {border: 1px solid #aaa;}
+/*Image Carousel*/
+#slider             {background:rgb(238,  118, 51);height: 15vh;margin: auto;overflow: hidden;position: fixed;z-index:1;bottom:0;margin:1vh 0vw;}
+#slider::before, .slider::after      {content: "";height: 100%;position: absolute; width: 5%; z-index: 2;}
+#slider::after      {right: 0;top: 0;transform: rotateZ(180deg);}
+#slider::before     {left: 0;top: 0;}
+#slide-track        {display: flex;width: 100%;height:90%;animation: scroll 70s linear infinite;margin:1vh 0vw;}/*animation: scroll 150s linear infinite;*/
+#slider .slide      {margin: 0;object-fit:contain;width:10vw; }
+#slider .slide img  {height:100%;margin: auto;display:block;}
 
-/*Page 1 Specfics (Multiple infinate Carousels)*/
-#slider                        {background:rgba(119, 177, 206, 1);height: 15vh;margin: auto;overflow: hidden;position: fixed;z-index:1;bottom:0;margin:1vh 0vw;}
-#slider::before,.slider::after {content: "";height: 100%;position: absolute; width: 5%; z-index: 2;}
-#slider::after                 {right: 0;top: 0;transform: rotateZ(180deg);}
-#slider::before                {left: 0;top: 0;}
-#slide-track                   {display: flex;width: 100%;height:90%;animation: scroll 70s linear infinite;margin:1vh 0vw;}/*animation: scroll 150s linear infinite;*/
-#slider .slide                 {margin: 0;object-fit:contain;width:10vw; }
-#slider .slide img             {height:100%;margin: auto;display:block;}
+/*Information Cards*/
+#infocard           {height:  72vh;width:   68vw;z-index:100;position: fixed;top: 1.5vh;left: 50%;transform: translate(-50%, 0%);background: #16134f;
+    clip-path: polygon( 0 015%, 10% 0,90% 0,100% 00%,100% 85%,90% 100%,0% 100%,0% 90%,0% 10%);color:white;}
+#staffimage         {position: fixed;height:  65vh;width:   30vw;top: 2.3vh;left:3vw;margin:1vh;float:left;object-fit: contain;z-index:100}
+#staffinfo          {height:  65vh;width: 30.5vw;top: 1.5vh;margin:1vh 1vh 1vh 0.5vh;text-align:left;float:right;padding:8vh 0vw 0vh 0vw;z-index:100;
+                     font-size: 1.2em;overflow-wrap: break-word;}
+#card-container     {position:fixed;top: 5vh;left: 50%;transform: translate(-50%, 0%);width: 70vw;height: 75vh;overflow:hidden;background: #0E0C35;
+    clip-path: polygon( 0 15%, 10% 0,90% 0,100% 00%,100% 85%,90% 100%,0% 100%,0% 90%,0% 10%);}
+/*Logo*/
+.spinner img           {height:90vh;width: auto; animation:spin 150s linear infinite;z-index:100;position:fixed;top: 0;bottom: 0;left: 0; right: 0;margin: auto;}
 
-/*Page 2 Specfics (Randomized inforcards)*/
-#infocard                      {height:  75vh;width:   70vw;background:rgb(238, 118, 51);z-index:100;position: fixed;top: 5vh;left: 50%;transform: translate(-50%, 0%);}
-#staffimage                    {height:  73vh;width:   30vw;margin:1vh;float:left;object-fit: contain;z-index:100}
-#staffinfo                     {height:  65vh;width: 37.5vw;margin:1vh 1vh 1vh 0.5vh;text-align:left;float:right;padding:13vh 0vw 0vh 0vw;z-index:100}
-
-/*Page 3 Specfics (Spinning Logo)*/
-.spinner img                   {height:90vh;width: auto; animation:spin 150s linear infinite;z-index:100;position:fixed;top: 0;bottom: 0;left: 0; right: 0;margin: auto;}
-.btn                           {background-color:rgb(238, 118, 51); border:none; color:white;text-align:center;cursor:pointer;border-radius:3vh;font-size:5vh;width:98vw;padding:10vh;margin:1vh 1vw 1vh 1vw;}
 /*Animations*/
-@keyframes scroll              { 0% { transform: translateX(0);} 100% { transform: translateX(calc(var(--scrolltranslation)));}}
-@keyframes spin                { 0% { transform: rotateY(0deg);} 5% { transform: rotateY(360deg);}100% { transform: rotateY(360deg);}}
+@keyframes scroll { 0% { transform: translateX(0);} 100% { transform: translateX(calc(var(--scrolltranslation)));}}
+@keyframes spin   { 0% { transform: rotateY(0deg);} 5% { transform: rotateY(360deg);}100% { transform: rotateY(360deg);}} 
 
-/*Page 4 Data Input*/
-.staffdata                     {width: 70vw;background:rgb(238, 118, 51);z-index:100;position: fixed;top: 52%;left: 50%;transform: translate(-50%, -50%);padding:2vh 2vw}
-.staffdata input               {width: 60vw;text-align:center;margin:0vh 5vw 0vh 5vw;}
-.staffdata label               {width: 70vw;text-align:center;float:left;}
-.staffdata input[type=submit]  {width: 20vw;margin:0vh 0vw 0vh 25vw;}
-.staffdata #image              {width: 70vw;margin:0vh 0vw 0vh 28vw;}
-/*screen resolution changes */
+  
+
+/*Annoucements*/
+#Message-Container{position:fixed;top: 0;bottom: 0;left: 0; right: 0;margin: auto;;width: 60vw;height: 60vh;overflow:hidden;background: #0E0C35;
+                   clip-path: polygon( 0 15%, 10% 0,90% 0,100% 00%,100% 85%,90% 100%,0% 100%,0% 90%,0% 10%);}
+#Attention {display:block;padding: .5em 2em;font-weight: bold;letter-spacing: .1em;text-align: center;text-transform: uppercase;float:right;color:white;font-size: 1.2em;}
+#Message{position:fixed;top: 0;bottom: 0;left: 0; right: 0;padding:1vh 1vw;margin: auto;width: 55vw;height: 50vh;overflow:hidden;background: #16134f;
+    clip-path: polygon( 0 015%, 10% 0,90% 0,100% 00%,100% 85%,91% 100%,0% 100%,0% 90%,0% 10%)}
+#Message .text{display:flex;align-items:center;position:fixed;top: 0;bottom: 0;left: 0; right: 0;padding:4vh 4vw;margin: auto;
+               width: 50vw;height: 45vh;overflow-wrap: break-word;letter-spacing: .1em;color:white;text-transform: uppercase;font-weight: bold;
+               font-size: 3em;}    
