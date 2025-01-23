@@ -3,19 +3,19 @@
         "MsgFrom": "NOTICE",
         "Announcement" : "No announcements",
         "RunFrom": "1999-05-01",
-        "RunTill":"2220-05-19"
+        "RunTill":"2025-05-19"
     },
     {
         "MsgFrom": "Employability Services",
         "Announcement" : "Tell us about your achievements to be in with a chance of winning £500! Deadline extended! New deadline: 5PM Friday 19th May",
         "RunFrom": "2023-05-01",
-        "RunTill":"2023-05-19"
+        "RunTill":"2025-05-19"
     },
     {
         "MsgFrom": "IT Services",
         "Announcement" : "Routine Maintance on internet will cause disruption on 2nd June. Sorry for any inconvenience",
         "RunFrom": "2023-05-23",
-        "RunTill":"2023-06-02"
+        "RunTill":"2025-06-02"
     },
     {
         "MsgFrom": "Electronic Engineers",
